@@ -1,30 +1,57 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma To-Do List</title>
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ma To-Do List</title> 
+ 
+    <link rel="stylesheet" href="style.css"> 
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- ✅ Bonne pratique : le CSS est placé dans un fichier séparé. -->
+</head> 
+ 
+<body> 
+ 
+    <div class="container"> 
+ 
+        <h1>  To Do List</h1> 
+ 
+        <!-- 💡 Le titre est clair. Vous pouvez cependant supprimer les espaces inutiles avant le texte. -->
+ 
+        <div class="input-box"> 
+            <input type="text" id="taskInput" placeholder="Écrire une tâche..."> 
+            <input type="date" id="taskdate"> 
+            <button id="addButton">Ajouter</button> 
 
-<body>
+            <!-- 🌟 Bonne idée d'avoir ajouté une date à chaque tâche : c'est une fonctionnalité supplémentaire intéressante. -->
+        </div> 
+ 
+        <ul id="taskList"> 
+        </ul> 
 
-    <div class="container">
+        <!-- ✅ La balise <ul> est adaptée pour afficher dynamiquement la liste des tâches. -->
+ 
+    </div> 
+ 
+    <script src="script.js"></script> 
 
-        <h1>  To Do List</h1>
-
-        <div class="input-box">
-            <input type="text" id="taskInput" placeholder="Écrire une tâche...">
-            <input type="date" id="taskdate">
-            <button id="addButton">Ajouter</button>
-        </div>
-
-        <ul id="taskList">
-        </ul>
-
-    </div>
-
-    <script src="script.js"></script>
-</body>
+    <!-- ✅ Le JavaScript est correctement séparé dans un fichier externe. -->
+</body> 
 </html>
+
+<!--
+ Remarque :
+
+Bravo pour votre travail !
+
+Vous avez essayé d'aller au-delà de la consigne de base en ajoutant
+une date à chaque tâche. C'est une bonne idée et cela montre votre
+volonté d'améliorer votre application.
+
+Attention cependant à bien vérifier les noms des variables utilisées
+en JavaScript : une petite erreur de nom peut empêcher toute
+l'application de fonctionner.
+
+Continuez à pratiquer JavaScript, vous êtes sur la bonne voie !
+ Bon courage pour la suite !
+-->

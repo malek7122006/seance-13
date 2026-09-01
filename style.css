@@ -1,73 +1,168 @@
-
 body {
+
     font-family: Arial, sans-serif;
+
     background-image: url(img/background.jpg);
+
+    /* ⚠️ Vérifiez que le dossier "img" et l'image "background.jpg"
+       sont bien présents dans votre dépôt GitHub.
+       Sinon, l'image ne s'affichera pas sur GitHub Pages. */
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     min-height: 100vh;
+
 }
 
 .container {
+
     background-color: white;
+
     width: 90%;
+
     max-width: 500px;
+
     padding: 40px;
+
     border-radius: 15px;
+
     box-shadow: 0 5px 15px #d8bfc9;
+
 }
 
+/* ✅ Bonne utilisation de max-width : la carte reste adaptée aux différentes tailles d'écran. */
+
 h1 {
+
     text-align: center;
+
     color: #c84b7c;
+
     margin-bottom: 25px;
+
 }
 
 .input-box {
+
     display: flex;
+
 }
+
+/* 💡 Vous utilisez Flexbox, mais sur un petit écran les trois éléments
+   (input, date et bouton) peuvent manquer d'espace.
+   Une adaptation responsive avec une media query serait intéressante. */
 
 input {
+
     padding: 12px;
+
     border: 1px solid #ccc;
+
     border-radius: 8px;
+
     font-size: 16px;
+
 }
+
 date {
+
 width: 130px;
+
 }
+
+/* ❌ ERREUR : "date" cible une balise <date>, qui n'existe pas dans votre HTML.
+   Votre champ est <input type="date">.
+   Il faudrait cibler l'input de type date avec un sélecteur CSS adapté. */
 
 button {
+
     padding: 12px 18px;
+
     border-radius: 8px;
+
     background-color: #da7aa1;
+
     color: white;
+
     cursor: pointer;
+
 }
+
+/* 💡 Vous pourriez ajouter border: none; pour supprimer la bordure
+   par défaut du bouton. */
 
 button:hover {
+
     background-color: #da749b;
+
 }
 
+/* ✅ Bon travail : vous avez ajouté un effet au survol du bouton. */
+
 ul {
+
     margin-top: 25px;
+
 }
 
 li {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     background-color: #f9f0f4;
+
     padding: 12px;
+
     margin-bottom: 10px;
+
     border-radius: 8px;
+
 }
 
+/* 🌸 Les tâches sont bien mises en valeur et la mise en page est claire. */
+
 .delete {
+
     background-color: #e68f85;
+
     padding: 7px 10px;
+
 }
 
 .delete:hover {
+
     background-color: #e28d83;
+
 }
+
+/* ✅ Bonne distinction visuelle du bouton de suppression. */
+
+/*
+💗 Remarque :
+
+Le design est simple, propre et cohérent avec les couleurs choisies.
+
+Points positifs :
+✔ bonne utilisation de Flexbox
+✔ couleurs harmonieuses
+✔ carte avec bordures arrondies
+✔ effet hover
+✔ interface simple et lisible
+
+Pour progresser :
+- pensez au responsive design ;
+- vérifiez vos sélecteurs CSS ;
+- ajoutez éventuellement des animations ;
+- travaillez la cohérence entre les noms utilisés en HTML, CSS et JavaScript.
+
+Bravo pour vos efforts et surtout pour l'idée d'avoir ajouté une date aux tâches !
+Continuez à pratiquer, chaque erreur est une occasion d'apprendre. 🌟
+*/
